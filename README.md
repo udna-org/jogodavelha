@@ -21,4 +21,10 @@
 Atendendo os requisitos acima, rodar dentro da pasta do projeto o sequinte comando: `yarn start` ou `npm start`.
 
 ---
+- "baixar"
+- "configurar" 
+- "rodar"
+=> o projeto fora da sua máquina.
+
+
 
