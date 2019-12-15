@@ -1,25 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Box from '../../components/Box'
 import { Container, Tabuleiro } from './styles';
 
+import { updateGameBoardSuccess } from '../../store/modules/round/actions';
+
+
 export default function GameBoard() {
-  const [jogadas, setJogadas] = useState(["x","o","x","o","x","o","x","o", "x"])
+  const [Board, setBoard] = useState([])
+  const [jogador, setJogador] = useState(' ')
+  const [ganhador, setGanhador] = useState('_')
+  const count = 0;
+  const [gameOver, setGameOver] = useState(false);
+
+  // Inicializando tabuleiro 
+  useEffect(()=>{
+    setBoard(Array(9).fill("o"))
+    setGameOver(false)
+  },[gameOver])
+
+  useEffect(() => {
+    updateGameBoardSuccess(Board)
+  }, [Board])
+
+
+  function renderBox(value, index){
+    return(
+      <Box key={index} index={index}>{jogador}</Box> 
+    )
+  }
 
   return (
     <Container>
       <h1> Vamos Jogar? </h1>
-      <Tabuleiro>
-        <Box className={1}> {jogadas[0]} </Box>
-        <Box className={2}> {jogadas[1]} </Box>
-        <Box className={3}> {jogadas[2]} </Box>
-
-        <Box className={4}> {jogadas[8]} </Box>
-        <Box className={5}> {jogadas[0]} </Box>
-        <Box className={6}> {jogadas[0]} </Box>
-
-        <Box className={7}> {jogadas[0]} </Box>
-        <Box className={8}> {jogadas[0]} </Box>
-        <Box className={9}> {jogadas[0]} </Box>
+      <Tabuleiro> 
+        {Board.map((square, index) => renderBox(square,index))}     
       </Tabuleiro>
     </Container>
   );

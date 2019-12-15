@@ -1,13 +1,11 @@
 import React from 'react';
-import Button from '../Slider'
 
 import { Container } from './styles';
 
-export default function Header() {
+export default function Slider() {
   return (
     <Container>
-      <h1> Jogo da Velha </h1>
-      <Button />
+      <button> MUDAR COR </button>
     </Container>
   );
 }

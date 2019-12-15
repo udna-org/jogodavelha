@@ -6,11 +6,14 @@ export const Container = styled.div`
   align-items: center;
   background: #3334;
   height: 50px;
-  padding: 10px;
+  padding-left: 15px;
 
-
-  h1 {
-    color: #fff;
-    /** color: #555 */
+  button {
+    padding: 8px;
+    color: #f5f5f5;
+    font-weight: bold;
+    background: blueviolet;
+    border: 3 solid #fff;
+    border-radius: 15px;
   }
 `;

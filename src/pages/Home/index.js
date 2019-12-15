@@ -7,11 +7,12 @@ import StatusBar from '../../components/StatusBar'
 import { Container } from './styles';
 
 export default function Home() {
+
   return (
     <Container>
-      <Header/>
+      <Header />
       <GameBoard />
-      <StatusBar />
+      <StatusBar gamer="O"/>
     </Container>
   );
 }

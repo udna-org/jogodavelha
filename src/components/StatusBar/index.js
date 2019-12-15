@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Container } from './styles';
 
-export default function StatusBar() {
+export default function StatusBar({ gamer }) {
   return (
     <Container>
-      <h1> * Status *  </h1>
-      <h2> Vez do jogador X </h2>
+      <h2> Vez do jogador <span> { gamer }</span> </h2>
+      <button> REINICIAR </button>
     </Container>
   );
 }

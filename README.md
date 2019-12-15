@@ -5,6 +5,7 @@
 - `create-react-app` foi usado para criar o projeto
 - `styled-components` para fazer a estilização da página
 - `react hooks` para lidar com algumas especificidades da aplicação ( useState, useRef, ...)
+- `redux` e `react-redux` para lidar com controle de estados
 
 ## Regras do jogo
 1) Cada jogador escolhe uma letra para representar-lhe no jogo (X ou O)
