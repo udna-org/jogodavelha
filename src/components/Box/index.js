@@ -6,7 +6,7 @@ import React, {useSelector, useDispatch } from 'react';
 
 import { Container } from './styles';
 
-export default function Box({ children, index }) {
+export default function Box({ onClick, children, index, light }) {
 
   //const jogada = useSelector(state => state.round.jogador)
   //const tabuleiro = useSelector(state => state.round.tabuleiro)
@@ -18,7 +18,7 @@ export default function Box({ children, index }) {
 
   return (
     <Container>
-      <button type="button" onClick={() => handleClick(index)}> {children}</button>
+      <button type="button" onClick={onClick(index)}> {children}</button>
     </Container>
   );
 }
