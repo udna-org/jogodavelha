@@ -1,17 +1,28 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div.attrs(props => ({
+  disabled: props.light === true,
+}))`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   button {
-    padding: 50px;
+    height: 100px;
+    width: 100px;
     background: #3c4042;
-
+    
+     /*background: #3c4042;*/ 
+     
     :only-child{
-      color: #52e623;
-      font-size: 24px;
+      color: #42e623;
+      font-size: 26px;
+      font-weight: bold;
     }
   }
 `;
+
+/** 
+    & [disabled]{
+      background: #f715c1;
+    } */
