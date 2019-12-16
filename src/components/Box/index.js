@@ -16,17 +16,17 @@ export default function Box({ valor, children, index, light }) {
   // Verificar se lugar está preenchido fazer alteração aqui dentro 
   useEffect(() => {}, [])
 
-  function handleClick(index){
-    const next = "x" 
-    console.tron.log("c",valor)
-    dispatch(updateGameBoardSuccess(next, index))
+  function handleClick(index, jogada){
+  
+    //console.tron.log("c",valor)
+    dispatch(updateGameBoardSuccess(jogada, index))
     console.tron.log(tabuleiro)
   }
 
 
   return (
     <Container>
-      <button type="button" onClick={() => handleClick(index, children)} value={valor} > {children} </button>
+      <button type="button" onClick={() => handleClick(index, jogada)} value={valor} > {children} </button>
     </Container>
   );
 }
