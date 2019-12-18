@@ -1,27 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import Box from '../../components/Box'
 import { updateGameBoardSuccess, startGame , endGame} from '../../store/modules/round/actions';
-
 import { Container, Tabuleiro } from './styles';
-
-import {useSelector, useDispatch} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 export default function GameBoard() {
-  // const [ganhador, setGanhador] = useState()
   const [gameOver, setGameOver] = useState(false);
   const tabuleiro = useSelector(state => state.round.tabuleiro)
 
   // Inicializando tabuleiro 
   useEffect(() => {
-    startGame()
+    startGame(0)
     setGameOver(false)
   },[gameOver])
 
-  // Atualizar tabuleiro 
+  // Varrer o tabuleiro em busca de um vencedor
   useEffect(() => {
-    updateGameBoardSuccess(tabuleiro)
-    console.tron.log(tabuleiro)
+    
   }, [tabuleiro])
 
   // se já existe ganhador
@@ -29,10 +25,10 @@ export default function GameBoard() {
     endGame()
   },[])
 
-  function renderBox(value, index){
+  function renderBox(valor, index){
     return(
-      <Box key={index} index={index} light={true} value={value}>
-        {value} 
+      <Box key={index} index={index} light={true} value={valor}>
+        {valor} 
       </Box> 
     )
   }
@@ -41,7 +37,7 @@ export default function GameBoard() {
     <Container>
       <h1> Vamos Jogar? </h1>
       <Tabuleiro> 
-        {tabuleiro.map((square, index) => renderBox(square,index))}     
+        {tabuleiro.map((valor, index) => renderBox(valor, index))}     
       </Tabuleiro>
     </Container>
   );

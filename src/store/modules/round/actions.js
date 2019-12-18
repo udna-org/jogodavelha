@@ -1,7 +1,7 @@
-export function updateGameBoardSuccess(next, index) {
+export function updateGameBoardSuccess(index) {
   return {
     type: '@round/UPDATE_GAMEBOARD_SUCCESS',
-    payload: { next, index }
+    payload: { index }
   }
 }
 
@@ -11,10 +11,10 @@ export function endGame() {
   }
 }
 
-export function startGame(tabuleiro, next) {
+export function startGame(valor) {
   return {
     type: '@round/START',
-    payload: { tabuleiro, next }
+    payload: { valor }
   }
 }
 

@@ -3,7 +3,6 @@ import Header from '../../components/Header'
 import GameBoard from '../../components/GameBoard'
 import StatusBar from '../../components/StatusBar'
 
-
 import { Container } from './styles';
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
     <Container>
       <Header />
       <GameBoard />
-      <StatusBar gamer="O"/>
+      <StatusBar />
     </Container>
   );
 }
