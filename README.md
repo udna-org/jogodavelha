@@ -27,5 +27,8 @@ Atendendo os requisitos acima, rodar dentro da pasta do projeto o sequinte coman
 - "rodar"
 => o projeto fora da sua máquina.
 
+https://jogodavelha-rho-three.now.sh/
+
+
 
 

@@ -17,6 +17,7 @@ export default function round(state = INICIAL_STATE, action) {
       })
     case '@round/UPDATE_GAMEBOARD_SUCCESS':
       return produce(state, draft => {
+      if (!draft.endGame){
         if (draft.tabuleiro[action.payload.index] === " "){
           draft.tabuleiro[action.payload.index] = draft.valores[draft.next]
           if (draft.next === 1 ){
@@ -26,6 +27,7 @@ export default function round(state = INICIAL_STATE, action) {
             draft.next = 1
           }
         }
+      }
       })
     case '@round/FINISHED':
         return produce(state, draft => {

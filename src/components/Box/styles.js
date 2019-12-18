@@ -10,12 +10,12 @@ export const Container = styled.div.attrs(props => ({
   button {
     height: 100px;
     width: 100px;
-    background: #3c4042;
+    background: #373c49;
     
      /*background: #3c4042;*/ 
      
     :only-child{
-      color: #42e623;
+      color: magenta;
       font-size: 26px;
       font-weight: bold;
     }

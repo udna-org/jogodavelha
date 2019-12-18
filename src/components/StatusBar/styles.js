@@ -5,23 +5,27 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #f5f5f5;
+  color: #e4e4e5;
   padding: 10px;
 
   h2 {
-    margin-top: 15px;
-    color: magenta;
+    margin-top: 25px;
+    color: #e4e4e5;
+    font-size: 30px;
     span {
-      color: #f5f5f5;
+      color: greenyellow;
       font-weight: bold;
+      font-size: 30px;
     }
   }
 
   button {
-    background: #f41142;
-    color: #f5f5f5;
+    background:#f41142;
+    color: #e4e4e5;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 35px;
   }
 `;
+
+//  #f41142

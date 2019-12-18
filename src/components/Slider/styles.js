@@ -10,10 +10,10 @@ export const Container = styled.div`
 
   button {
     padding: 8px;
-    color: #f5f5f5;
+    color: #e4e4e5;
     font-weight: bold;
     background: blueviolet;
-    border: 3 solid #fff;
+    border: 3 solid #e4e4e5;
     border-radius: 15px;
   }
 `;
