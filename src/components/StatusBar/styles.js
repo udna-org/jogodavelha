@@ -10,10 +10,10 @@ export const Container = styled.div`
 
   h2 {
     margin-top: 25px;
-    color: #ff2112;
+    color: #a374e5;
     font-size: 30px;
     span {
-      color: #a374e5;
+      color: #f41142;
       font-weight: bold;
       font-size: 30px;
     }

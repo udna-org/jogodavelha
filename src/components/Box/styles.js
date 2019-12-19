@@ -8,10 +8,10 @@ export const Container = styled.div`
   button {
     height: 100px;
     width: 100px;
-    background: ${props => props.tema === true ? '#f715c1'  : '#373c49'};
+    background: ${props => props.tema === true ? '#e5e5e5'  : '#373c49'};
    
     :only-child {
-      color: ${props => (props.tema ? 'blue' : 'red')};
+      color: ${props => (props.tema ? '#373c49' : '#e5e5e5')};
       font-size: 26px;
       font-weight: bold;
     }
