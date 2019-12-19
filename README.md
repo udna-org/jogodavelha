@@ -36,7 +36,7 @@ https://jogodavelha-rho-three.now.sh/
 ## Pra fazer
 
 [ ] Dispatch inicio e fim do jogo - atualizar estados
-[ ] Mudar estilização (claro e escuro) * h1 h1 span globais
+[x] Mudar estilização (claro e escuro) * h1 h1 span globais
 [ ] Salvar estado de estilização no storage
 [ ] Reestruturar pagina
 [ ] Aviso de ganhador

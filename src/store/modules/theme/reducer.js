@@ -1,7 +1,7 @@
 import produce from 'immer'
 
 const INICIAL_STATE = {
-  cor: false
+  cor: Boolean(localStorage.getItem("tema"))
 }
 
 export default function theme(state = INICIAL_STATE, action) {
@@ -10,8 +10,12 @@ export default function theme(state = INICIAL_STATE, action) {
       return produce(state, draft => {
         if (draft.cor === true){
           draft.cor =  false
+          localStorage.setItem("tema", draft.cor)
+
         }else{
           draft.cor = true 
+          localStorage.setItem("tema", draft.cor)
+
         }
       })
     default:
