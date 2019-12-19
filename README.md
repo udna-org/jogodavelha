@@ -6,6 +6,7 @@
 - `styled-components` para fazer a estilização da página
 - `react hooks` para lidar com algumas especificidades da aplicação ( useState, useRef, ...)
 - `redux` e `react-redux` para lidar com controle de estados
+- `reactotron` para debugar e ver as interações do redux em desenvolvimento
 
 ## Regras do jogo
 1) Cada jogador escolhe uma letra para representar-lhe no jogo (X ou O)
@@ -16,18 +17,31 @@
 
 ### Para rodar a aplicação localmente
 É necessario ter instalado, na versão descrita ou superior que seja compatível.
+
 - __*NodeJs*(v12.11.1)__
+
 - __*npm* ( 6.11.3 ) ou *yarn* ( 1.17.3 )__
 
 Atendendo os requisitos acima, rodar dentro da pasta do projeto o sequinte comando: `yarn start` ou `npm start`.
 
 ---
-- "baixar"
-- "configurar" 
-- "rodar"
-=> o projeto fora da sua máquina.
+- "Baixar"
+- "Configurar" 
+- "Rodar"
+---
 
+**Site no ZEIT**
 https://jogodavelha-rho-three.now.sh/
+
+## Pra fazer
+
+[ ] Dispatch inicio e fim do jogo - atualizar estados
+[ ] mudar estilização (claro e escuro)
+[ ] salvar estado de estilização no storage
+[ ] reestruturar pagina
+[ ] aviso de ganhador
+[ ] salvar estados de cada rodada e mostrar
+[ ] reorganizar arquivos e pastas
 
 
 

@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div.attrs(props => ({
-  disabled: props.light === true,
-}))`
+export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,19 +8,12 @@ export const Container = styled.div.attrs(props => ({
   button {
     height: 100px;
     width: 100px;
-    background: #373c49;
-    
-     /*background: #3c4042;*/ 
-     
-    :only-child{
-      color: magenta;
+    background: ${props => (props.cor ? '#f715c1': '#373c49')}; 
+   
+    :only-child {
+      color: ${props => (props.cor ? 'blue' : 'red')};
       font-size: 26px;
       font-weight: bold;
     }
   }
 `;
-
-/** 
-    & [disabled]{
-      background: #f715c1;
-    } */

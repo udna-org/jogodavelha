@@ -10,10 +10,10 @@ export const Container = styled.div`
 
   h2 {
     margin-top: 25px;
-    color: #e4e4e5;
+    color: #ff2112;
     font-size: 30px;
     span {
-      color: greenyellow;
+      color: #a374e5;
       font-weight: bold;
       font-size: 30px;
     }
@@ -21,11 +21,9 @@ export const Container = styled.div`
 
   button {
     background:#f41142;
-    color: #e4e4e5;
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
     margin-top: 35px;
   }
 `;
-
-//  #f41142

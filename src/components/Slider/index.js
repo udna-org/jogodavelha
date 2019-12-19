@@ -1,11 +1,21 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { updateTheme } from '../../store/modules/theme/actions'
 
 import { Container } from './styles';
 
 export default function Slider() {
+  const color = useSelector(state => state.theme.cor)
+  const dispatch = useDispatch()
+
+  function handleColor(){
+    console.log("muda a cor", color)
+    dispatch(updateTheme(!color))
+  }
+
   return (
     <Container>
-      <button> MUDAR COR </button>
+      <button onClick={handleColor}> MUDAR COR </button>
     </Container>
   );
 }
