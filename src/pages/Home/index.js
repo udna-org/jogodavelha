@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import Header from '../../components/Header';
 import GameBoard from '../../components/GameBoard';
 import StatusBar from '../../components/StatusBar';
-import Button from '../../components/Slider';
 
 import { Container } from './styles';
 
@@ -14,7 +13,6 @@ export default function Home() {
   return (
     <Container theme={theme}>
       <Header />       
-      <Button/>
       <GameBoard />
       <StatusBar />
     </Container>

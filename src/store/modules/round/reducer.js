@@ -1,4 +1,4 @@
-import produce from 'immer'
+import produce from 'immer';
 
 const INICIAL_STATE = {
   tabuleiro: Array(9).fill(" "),

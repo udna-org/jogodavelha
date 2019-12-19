@@ -8,8 +8,7 @@ export function Verifica(tabuleiro) {
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]
-  ];
-
+  ]
   for (let i = 0; i < seguenciaVencedora.length; i++) {
     const [a, b, c] = seguenciaVencedora[i];
     if (tabuleiro[a] !== " "){
@@ -19,13 +18,11 @@ export function Verifica(tabuleiro) {
     }
   }
   return []
-}
-
-export function Desenha(tabuleiro, winner){
+};
+export function Desenha(tabuleiro, vencedor){
   const draw = Array(9).fill(false)
-
   tabuleiro.map((_, index) => (
-    winner.map(linha => {
+    vencedor.map(linha => {
       if (linha.length === 0){
         return draw
       }
@@ -33,7 +30,6 @@ export function Desenha(tabuleiro, winner){
         draw[index] = true
       } 
       return draw
-    }
-    )
+    })
   ))
-}
+};

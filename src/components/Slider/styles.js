@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding-left: 15px;
 
   button {
-    padding: 8px;
+    padding: 9px;
     color: #fff;
     font-weight: bold;
     background: blueviolet;

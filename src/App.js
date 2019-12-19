@@ -1,12 +1,10 @@
 import React from 'react';
-import './config/Reactototron';
+import { Provider } from 'react-redux';
+import './config/reactotron';
 import Home from './pages/Home';
+import store from './store';
+
 import GlobalStyle from './styles/global';
-
-
-/** Redux */
-import { Provider } from 'react-redux'
-import store from './store'
 
 function App() {
   return (

@@ -17,4 +17,4 @@ export default function theme(state = INICIAL_STATE, action) {
     default:
       return state
   }
-}
+};

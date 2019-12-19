@@ -6,10 +6,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  color: #ff3324;
   
   h1 {
-    color: #52e623;
+    color: ${props => props.tema === false ? '#52e623'  : 'blue'};
     font-size: 32px;
   }
 `;

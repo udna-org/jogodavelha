@@ -3,12 +3,14 @@ import Box from '../../components/Box'
 //import { startGame , endGame } from '../../store/modules/round/actions';
 import { Container, Tabuleiro } from './styles';
 import { useSelector } from 'react-redux';
-import { Verifica, Desenha } from '../../utils/EndGame';
+import { Verifica, Desenha } from '../../utils/regras';
 
 export default function GameBoard() {
   const [winner, setWinner] = useState([[]])
   const [draw, setDraw] = useState(Array(9).fill(false))
   const tabuleiro = useSelector(state => state.round.tabuleiro)
+  const tema = useSelector(state => state.theme.cor)
+
   // const endGame = useSelector(state => state.round.endGame)
   // const dispatch = useDispatch()
 
@@ -25,14 +27,14 @@ export default function GameBoard() {
   
   function renderBox(valor, index, draw){
     return(
-      <Box key={index} index={index} cor={draw ? draw[index].toString(): "deuruim"}>
+      <Box key={index} index={index} cor={draw ? draw[index].toString(): "deuruim"} >
         {valor} 
       </Box> 
     )
   }
 
   return (
-    <Container>
+    <Container tema={tema}>
       <h1> Vamos Jogar? </h1>
       <Tabuleiro> 
         {tabuleiro.map((valor, index) => renderBox(valor, index, draw))}     
