@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <Container tema={tema}>
       <h1> Jogo da Velha </h1>
-      <Button/>
+      <Button tema={tema}/>
     </Container>
   );
 }

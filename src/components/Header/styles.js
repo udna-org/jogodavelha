@@ -8,9 +8,7 @@ export const Container = styled.div`
   padding: 10px;
 
   h1 {
-    color: ${props => props.tema === false ? '#373c49' : '#e5e5e5'  };
-
+    color: ${props => props.tema === false ? '#373c49' : '#e4e4e5'  };
     font-size: 40px;
-    /** color: #e4e4e5 */
   }
 `;

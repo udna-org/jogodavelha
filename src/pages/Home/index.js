@@ -15,7 +15,7 @@ export default function Home() {
     <Container theme={theme}>
       <Header />       
       <GameBoard />
-      <StatusBar />
+      <StatusBar tema={theme}/>
     </Container>
   );
 }

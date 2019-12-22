@@ -9,9 +9,11 @@ export const Container = styled.div`
 
   button {
     padding: 9px;
-    color: #fff;
+    color: ${props => props.tema === false ?  '#e4e4e5' : '#373c49'};
+
     font-weight: bold;
-    background: blueviolet;
+    background: ${props => props.tema === false ? '#373c49' : '#e4e4e5'};
+
     border-radius: 15px;
   }
 `;

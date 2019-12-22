@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   h2 {
     margin-top: 25px;
-    color: #a374e5;
+    color: ${props => props.tema === false ? '#373c49' : '#e4e4e5'};
     font-size: 30px;
     span {
       color: #f41142;
