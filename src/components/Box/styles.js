@@ -6,8 +6,8 @@ export const Container = styled.div`
   align-items: center;
   
   button {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     background: ${props => props.tema === true ? '#e5e5e5'  : '#373c49'};
    
     :only-child {

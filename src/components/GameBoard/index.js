@@ -7,10 +7,13 @@ import { Verifica, Desenha } from '../../utils/regras';
 
 export default function GameBoard() {
   const [winner, setWinner] = useState([[]])
-  const [draw, setDraw] = useState(Array(9).fill(false))
+  const [draw, setDraw] = useState([])
   const tabuleiro = useSelector(state => state.round.tabuleiro)
   const tema = useSelector(state => state.theme.cor)
 
+  useEffect(()=>{
+    setDraw(Array(9).fill(false))
+  },[])
   // const endGame = useSelector(state => state.round.endGame)
   // const dispatch = useDispatch()
 
@@ -27,7 +30,7 @@ export default function GameBoard() {
   
   function renderBox(valor, index, draw){
     return(
-      <Box key={index} index={index} cor={draw ? draw[index].toString(): "deuruim"} >
+      <Box key={index} index={index} cor={draw ? "draw[index].toString() ": "deuruim"} >
         {valor} 
       </Box> 
     )

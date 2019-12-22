@@ -25,9 +25,11 @@
 Atendendo os requisitos acima, rodar dentro da pasta do projeto o sequinte comando: `yarn start` ou `npm start`.
 
 ---
+
 - "Baixar"
 - "Configurar" 
 - "Rodar"
+
 ---
 
 **Site no ZEIT**
@@ -36,13 +38,17 @@ https://jogodavelha-rho-three.now.sh/
 ## Pra fazer
 
 [x] Mudar estilização (claro e escuro) * 
+
 [x] Salvar estado de estilização no storage *
+
 [ ] Dispatch inicio e fim do jogo - atualizar estados
 
 [ ] Aviso de ganhador
+
 [ ] Bloquear os quadrados se jogo já está finalizado
 
 [ ] Reorganizar arquivos e pastas
+
 [ ] Reestruturar pagina
 
 [ ] Salvar estados de cada rodada e mostrar
