@@ -38,10 +38,10 @@ export default function GameBoard() {
 
   return (
     <Container tema={tema}>
-      <h1> Vamos Jogar? </h1>
       <Tabuleiro> 
         {tabuleiro.map((valor, index) => renderBox(valor, index, draw))}     
       </Tabuleiro>
     </Container>
   );
 }
+//       <h1> Vamos Jogar? </h1>
