@@ -9,10 +9,10 @@ export const Container = styled.div`
 
   button {
     padding: 9px;
-    color: ${props => props.tema === false ?  '#e4e4e5' : '#373c49'};
+    color: ${props => props.tema === false ?  '#e4e4e5' : '#091b28'};
 
     font-weight: bold;
-    background: ${props => props.tema === false ? '#373c49' : '#e4e4e5'};
+    background: ${props => props.tema === false ? '#091b28' : '#e4e4e5'};
 
     border-radius: 15px;
   }
