@@ -1,3 +1,6 @@
+<img alt="Velha" src="https://github.com/gislainejessica/jogodavelha/blob/master/jogo.png" />
+
+
 # Jogo da Velha
 > Utilizando a biblioteca do React.
 
@@ -37,19 +40,19 @@ https://jogodavelha-rho-three.now.sh/
 
 ## Pra fazer
 
-[x] Mudar estilização (claro e escuro) * 
+- [x] Mudar estilização (claro e escuro) * 
 
-[x] Salvar estado de estilização no storage *
+- [x] Salvar estado de estilização no storage *
 
-[ ] Dispatch inicio e fim do jogo - atualizar estados
+- [ ] Dispatch inicio e fim do jogo - atualizar estados
 
-[ ] Aviso de ganhador
+- [ ] Aviso de ganhador
 
-[ ] Bloquear os quadrados se jogo já está finalizado
+- [ ] Bloquear os quadrados se jogo já está finalizado
 
-[ ] Reorganizar arquivos e pastas
+- [ ] Reorganizar arquivos e pastas
 
-[ ] Reestruturar pagina
+- [ ] Reestruturar pagina
 
-[ ] Salvar estados de cada rodada e mostrar
+- [ ] Salvar estados de cada rodada e mostrar
 
